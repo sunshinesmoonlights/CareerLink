@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareerLink | Campus Careers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="CareerLink home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span>career<span class="brand-light">link</span></span>
+      </a>
+      <div class="workspace-label">STUDENT PORTAL</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <!-- <button class="nav-item active" data-page="Overview"><span class="nav-icon">▦</span> Overview</button> -->
+        <button class="nav-item" data-page="Jobs"><span class="nav-icon">⌕</span> Find jobs <span class="nav-count">8</span></button>
+        <button class="nav-item" data-page="Applications"><span class="nav-icon">▤</span> My applications</button>
+        <button class="nav-item" data-page="Assessments"><span class="nav-icon">◷</span> Assessments <span class="nav-dot"></span></button>
+        <button class="nav-item" data-page="Events"><span class="nav-icon">▦</span> Events & drives</button>
+      </nav>
+      <div class="nav-divider"></div>
+      <!-- <div class="workspace-label">YOUR CAREER</div>
+      <nav class="main-nav">
+        <button class="nav-item" data-page="Profile"><span class="nav-icon">♙</span> My profile</button>
+        <button class="nav-item" data-page="Documents"><span class="nav-icon">▧</span> Documents</button>
+        <button class="nav-item" data-page="Resources"><span class="nav-icon">▱</span> Career resources</button>
+      </nav> -->
+      <!-- <div class="sidebar-bottom">
+        <div class="help-card">
+          <div class="help-icon">✦</div>
+          <strong>Need a little help?</strong>
+          <p>Explore tips to make your next application stand out.</p>
+          <button id="resourceBtn">Explore resources <span>↗</span></button>
+        </div> -->
+        <button class="nav-item settings-link" data-page="Settings"><span class="nav-icon">⚙</span> Settings</button>
+        <div class="user-mini">
+          <div class="avatar avatar-purple">SB</div>
+          <div class="user-mini-info"><strong>Snehal Bhosle</strong><span>Student account</span></div>
+          <button class="more-btn" id="userMenuBtn" aria-label="User menu">•••</button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><span class="crumb-slash">/</span><strong id="currentPage">Overview</strong></div>
+        <div class="top-actions">
+          <div class="search-wrap"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search jobs, companies..." /><kbd>⌘ K</kbd></div>
+          <button class="icon-btn" id="notificationBtn" aria-label="Notifications">♧<i></i></button>
+          <div class="top-avatar">SB</div>
+        </div>
+      </header>
+
+      <div class="page-wrap">
+        <section class="welcome-row">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR CAREER JOURNEY</div>
+            <h1 id="pageHeading">Good morning, Snehal <span class="wave">✳</span></h1>
+            <p class="welcome-subtitle" id="pageSubtitle">Your next opportunity could be one click away. Here's your career at a glance.</p>
+          </div>
+          <!-- <div class="welcome-actions">
+            <button class="btn btn-secondary" id="downloadBtn"><span>↓</span> Export summary</button>
+            <button class="btn btn-primary" id="browseJobsBtn">Explore opportunities <span>↗</span></button>
+          </div> -->
+        </section>
+
+        <section class="profile-progress">
+          <div class="progress-symbol">✦</div>
+          <div class="progress-copy"><strong>Your profile is almost there!</strong><p>Complete your profile to help recruiters get to know you better.</p></div>
+          <div class="progress-track-wrap"><div class="progress-meta"><span>Profile completion</span><strong>80%</strong></div><div class="progress-track"><span style="width:80%"></span></div></div>
+          <button class="text-link" data-goto="Profile">Complete profile <span>→</span></button>
+        </section>
+
+        <section class="stats-grid" aria-label="Career summary">
+          <article class="stat-card"><div class="stat-top"><span>Applications sent</span><span class="stat-icon lilac">↗</span></div><div class="stat-value">12</div><div class="stat-foot"><span class="trend">↑ 3</span> <span>this month</span></div><div class="mini-bars bars-one"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="stat-card"><div class="stat-top"><span>In progress</span><span class="stat-icon amber">◷</span></div><div class="stat-value">4</div><div class="stat-foot"><span class="status-dot orange"></span><span>Keep an eye on updates</span></div><div class="mini-line"><svg viewBox="0 0 140 34" preserveAspectRatio="none"><path d="M0 27 C18 25 18 8 35 16 S56 29 70 17 S90 5 103 15 S123 24 140 4" /></svg></div></article>
+          <article class="stat-card"><div class="stat-top"><span>Assessments</span><span class="stat-icon mint">✓</span></div><div class="stat-value">3 <small>/ 5</small></div><div class="stat-foot"><span>2 assessments remaining</span></div><div class="segmented-progress"><i class="done"></i><i class="done"></i><i class="done"></i><i></i><i></i></div></article>
+          <article class="stat-card"><div class="stat-top"><span>Profile views</span><span class="stat-icon blue">◎</span></div><div class="stat-value">28</div><div class="stat-foot"><span class="trend">↑ 18%</span><span>vs. last month</span></div><div class="sparkline"><svg viewBox="0 0 140 34" preserveAspectRatio="none"><path d="M0 29 L14 21 L27 25 L42 12 L55 19 L69 8 L82 16 L96 5 L110 12 L125 3 L140 7" /></svg></div></article>
+        </section>
+
+        <div class="content-grid">
+          <section class="panel jobs-panel" id="jobsPanel">
+            <div class="panel-heading"><div><h2>Recommended for you <span class="heading-count">08</span></h2><p>Opportunities matched to your profile and interests.</p></div><button class="text-link" id="viewAllJobs">View all jobs <span>→</span></button></div>
+            <div class="job-filters">
+              <button class="filter-chip active" data-filter="All">All opportunities <span>8</span></button>
+              <button class="filter-chip" data-filter="Internship">Internships</button>
+              <button class="filter-chip" data-filter="Full-time">Full-time</button>
+              <button class="filter-chip" data-filter="Remote">Remote</button>
+            </div>
+            <div class="job-list" id="jobList">
+              <article class="job-card" data-type="Internship" data-search="Microsoft software engineering intern technology">
+                <div class="company-logo microsoft"><i></i><i></i><i></i><i></i></div>
+                <div class="job-main"><div class="job-title-line"><h3>Software Engineering Intern</h3><span class="match-pill">94% match</span></div><div class="company-line">Microsoft <span>·</span> <span class="verified">✓</span> Verified employer</div><div class="job-tags"><span>Internship</span><span>Hybrid</span><span>Software</span></div></div>
+                <div class="job-meta"><strong>₹45,000 <small>/ month</small></strong><span>📍 Hyderabad, India</span><span>Posted 2 days ago</span></div>
+                <button class="bookmark-btn" aria-label="Save Software Engineering Intern">♡</button>
+                <button class="job-open" aria-label="View Software Engineering Intern">↗</button>
+              </article>
+              <article class="job-card" data-type="Full-time" data-search="Deloitte analyst technology consulting">
+                <div class="company-logo deloitte">D<span>.</span></div>
+                <div class="job-main"><div class="job-title-line"><h3>Technology Analyst</h3><span class="match-pill">89% match</span></div><div class="company-line">Deloitte <span>·</span> <span class="verified">✓</span> Verified employer</div><div class="job-tags"><span>Full-time</span><span>On-site</span><span>Consulting</span></div></div>
+                <div class="job-meta"><strong>₹6.5–8 LPA</strong><span>📍 Pune, India</span><span>Posted 4 days ago</span></div>
+                <button class="bookmark-btn" aria-label="Save Technology Analyst">♡</button>
+                <button class="job-open" aria-label="View Technology Analyst">↗</button>
+              </article>
+              <article class="job-card" data-type="Remote" data-search="Atlassian frontend developer remote javascript">
+                <div class="company-logo atlassian">⌁</div>
+                <div class="job-main"><div class="job-title-line"><h3>Frontend Developer Intern</h3><span class="match-pill">86% match</span></div><div class="company-line">Atlassian <span>·</span> <span class="verified">✓</span> Verified employer</div><div class="job-tags"><span>Internship</span><span>Remote</span><span>Engineering</span></div></div>
+                <div class="job-meta"><strong>₹35,000 <small>/ month</small></strong><span>📍 Remote, India</span><span>Posted 1 week ago</span></div>
+                <button class="bookmark-btn" aria-label="Save Frontend Developer Intern">♡</button>
+                <button class="job-open" aria-label="View Frontend Developer Intern">↗</button>
+              </article>
+              <article class="job-card" data-type="Internship" data-search="Zomato data analyst intern python sql">
+                <div class="company-logo zomato">z</div>
+                <div class="job-main"><div class="job-title-line"><h3>Data Analyst Intern</h3><span class="match-pill">82% match</span></div><div class="company-line">Zomato <span>·</span> <span class="verified">✓</span> Verified employer</div><div class="job-tags"><span>Internship</span><span>Hybrid</span><span>Data & AI</span></div></div>
+                <div class="job-meta"><strong>₹30,000 <small>/ month</small></strong><span>📍 Gurugram, India</span><span>Posted 1 week ago</span></div>
+                <button class="bookmark-btn" aria-label="Save Data Analyst Intern">♡</button>
+                <button class="job-open" aria-label="View Data Analyst Intern">↗</button>
+              </article>
+            </div>
+            <div class="empty-state hidden" id="emptyJobs">No opportunities match your search. Try another keyword or filter.</div>
+            <button class="load-more" id="loadMore">Explore all opportunities <span>→</span></button>
+          </section>
+
+          <aside class="right-column">
+            <section class="panel activity-panel">
+              <div class="panel-heading compact"><div><h2>Upcoming activity</h2><p>Stay ready for what's next.</p></div><button class="subtle-icon" id="calendarBtn" aria-label="Open calendar">▦</button></div>
+              <div class="activity-item"><div class="date-tile"><span>OCT</span><strong>16</strong></div><div class="activity-copy"><strong>Online coding assessment</strong><span>Infosys · 10:00 AM</span><div class="activity-status due">Due in 2 days</div></div><button class="arrow-btn" aria-label="Assessment details">↗</button></div>
+              <div class="activity-item"><div class="date-tile date-blue"><span>OCT</span><strong>18</strong></div><div class="activity-copy"><strong>Pre-placement talk</strong><span>Tech Mahindra · 2:30 PM</span><div class="activity-status upcoming">Upcoming</div></div><button class="arrow-btn" aria-label="Event details">↗</button></div>
+              <div class="activity-item"><div class="date-tile date-peach"><span>OCT</span><strong>21</strong></div><div class="activity-copy"><strong>Resume review session</strong><span>Career cell · 11:00 AM</span><div class="activity-status upcoming">Upcoming</div></div><button class="arrow-btn" aria-label="Session details">↗</button></div>
+              <button class="full-width-link" id="allActivity">View calendar <span>→</span></button>
+            </section>
+
+            <!-- <section class="announcement-card">
+              <div class="announce-top"><span class="announce-label"><span>✦</span> CAREER CELL</span><span class="announce-dots">•••</span></div>
+              <h2>Campus placement season is here.</h2>
+              <p>Get your resume ready, update your skills, and make every opportunity count.</p>
+              <button id="announcementBtn">Read placement tips <span>↗</span></button>
+              <div class="announce-decoration"><span></span><span></span><span></span><b>↗</b></div>
+            </section> -->
+          </aside>
+        </div>
+        <footer class="footer"><span>© 2026 CareerLink</span><span>Made for your next big move <b>✦</b></span><div><a href="#" data-page="Help">Help center</a><a href="#" data-page="Privacy">Privacy</a></div></footer>
+      </div>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop hidden" id="modalBackdrop">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">×</button>
+      <div class="modal-kicker">CAREERLINK</div>
+      <h2 id="modalTitle">Opportunity details</h2>
+      <p id="modalDescription">Explore this opportunity and get ready for your next step.</p>
+      <div class="modal-details" id="modalDetails"></div>
+      <div class="modal-actions"><button class="btn btn-secondary" id="modalCancel">Close</button><button class="btn btn-primary" id="modalPrimary">Apply now <span>↗</span></button></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
